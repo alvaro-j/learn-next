@@ -3,11 +3,13 @@ import Image from "next/image"; // set width and height for imgs with no effort
 import Head from "next/head"; // to config the <head> for each route/page
 import Script from "next/script"; // third-party scripts
 
+import Layout from "../components/Layout";
+
 import styles from "../styles/Home.module.css"
 
 const yourmom = () => {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>your mom</title>
 			</Head>
@@ -23,7 +25,7 @@ const yourmom = () => {
 					<a>Back to home</a>
 				</Link>
 			</h2>
-		</>
+		</Layout>
 	);
 };
 
